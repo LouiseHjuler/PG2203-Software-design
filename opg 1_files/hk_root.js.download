@@ -1,0 +1,8 @@
+/*EvaluationKIT START*/var evalkit_jshosted = document.createElement('script');evalkit_jshosted.setAttribute('defer', 'defer');evalkit_jshosted.setAttribute('type', 'text/javascript');evalkit_jshosted.setAttribute('src', 'https://kristiania.evaluationkit.eu/canvas/js');document.getElementsByTagName('head')[0].appendChild(evalkit_jshosted);/*EvaluationKIT END*/
+
+window.ALLY_CFG = {
+    'baseUrl': 'https://prod-eu-central-1.ally.ac',
+    'clientId': 890,
+    'lti13Id': '123350000000000171'
+};
+$.getScript(ALLY_CFG.baseUrl + '/integration/canvas/ally.js');

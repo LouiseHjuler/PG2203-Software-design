@@ -1,0 +1,245 @@
+body:not(.full-width):not(.outcomes) .ic-Layout-wrapper {
+    max-width: 100%;
+}
+
+#wiki_page_show h1 { max-width: 800px; }
+#wiki_page_show h2 { max-width: 800px; }
+#wiki_page_show p { max-width: 800px; }
+#wiki_page_show li { max-width: 800px;}
+/*#wiki_page_show div { max-width: 800px;}*/
+#wiki_page_show table { max-width: 800px;}
+
+body.primary-nav-expanded .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .menu-item__text {
+    color: #000;)
+}
+
+.ic-dashboard-app {
+    margin-top: 0px;
+}
+
+
+/*  Collapse all modules. 
+     use this in combination with JS to auto-open the module link that was 
+     clicked to navigate to the page */
+
+#content #context_modules .content,
+#content #context_modules .collapse_module_link {
+  display: none;
+}
+
+#content #context_modules .expand_module_link {
+  display: inline-block;
+}
+
+
+
+/*NETTSTUDIER*/
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.resp-container-kursinnhold {
+    position: relative;
+    overflow: auto;
+   /* width:100%;*/
+    min-height: 1000px;
+    -webkit-overflow-scrolling:touch;
+}
+
+.resp-iframe-kursinnhold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.resp-container-diskusjon {
+    position: relative;
+    overflow: auto;
+   /* width:100%;*/
+    min-height: 600px;
+    -webkit-overflow-scrolling:touch;
+}
+
+.resp-iframe-diskusjon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+img.shadow{
+	float: right;
+	margin: 1.4em;
+	border-radius: 100%;
+	max-height: 10em;
+	width: 10em;
+	object-fit: cover;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+
+
+.whitebox{
+    background-color: white;
+    width: 98%;
+   padding: 10px;
+                border : 1px solid #D6CDD4;
+}
+ 
+.brownbox{
+    background-color: #F1F0F0;
+    width: 98%;
+    padding: 10px;
+}
+ 
+.quote{
+    background: url( "../../grafikk/quote.png") no-repeat;
+    padding-left: 51px;
+    min-height: 4em;
+    min-width: 4em;
+}
+ 
+.indentitalic{
+    padding-left: 2em;
+    font-style: italic;
+}
+ 
+/*PENSUM SIDE*/
+ 
+ 
+.books{
+    max-width: 624px;
+    /*visibility: hidden;*/
+}
+ 
+.book{
+    float: left;
+    margin-bottom: 20px;
+}
+ 
+.article{
+    float: left;
+    margin-bottom: 20px;
+}
+ 
+ 
+.caption{
+    margin: 10px;
+    max-width: 450px;
+    float:left;
+}
+ 
+.composite{
+    float:left;
+    margin: 10px;
+}
+ 
+/*.overlay{
+    position: relative;
+    background: url( "/courses/1937/files/116177/preview") no-repeat;
+}*/
+ 
+ 
+.cover{
+    /*position: absolute;*/
+}
+ 
+.caption .author{
+    font-size: .9em;
+    margin:0;
+    max-width: 400px;
+}
+ 
+.caption .title{
+    font-size: .9em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.3em;
+    margin:0;
+    max-width: 400px;
+    padding: 0;
+}
+ 
+.caption .pub{
+    font-size: .9em;
+    margin:0;
+    max-width: 400px;
+}
+ 
+.caption .chapters{
+    max-width: 400px;
+    font-size: .9em;
+    font-weight: bold;
+    margin:0;
+}
+ 
+/*Data tabell*/
+ 
+.whitedatatable{
+    border:none;
+    border-collapse:collapse;
+}
+ 
+.whitedatatable th{
+    border:1px solid #333333;
+ 
+    background-color: #F1F0F0;
+    padding:  .5em;
+    vertical-align: middle;
+    height: 2em;
+}
+ 
+/*.whitedatatable  tbody{
+ 
+}*/
+ 
+.whitedatatable tr{
+    /*background-color: #fbfcf3;*/
+                background-color: #FFFFFF;
+}
+ 
+ 
+.whitedatatable td{
+    border: 1px solid #333333;
+ 
+    /*   background-color: #FFFFFF;*/
+    padding-top:  .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    vertical-align: middle;
+}
+
+.whitetable{
+    border:none;
+    width:100%;
+    border-collapse:collapse;
+}
+ 
+.whitetable td {
+    border : 2px solid #f4f5ec;
+    background-color: #FFFFFF;
+    padding-top:  .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    vertical-align: top;
+}
