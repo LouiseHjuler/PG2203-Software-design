@@ -11,6 +11,10 @@ namespace EF_core_lecture.DataAccess.SqLite {
 		public DbSet<Student> Student => Set<Student>();
 		public DbSet<Education> Education => Set<Education>();
 
+		public DbSet<Teacher> Teacher => Set<Teacher>();
+
+		public DbSet<Course> Courses => Set<Course>();
+
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
 			optionsBuilder.UseSqlite(@"Data Source = Resources\School.db"); //SQLite specific, @ also prevents read of special characters in string as anything but string 
 		}
