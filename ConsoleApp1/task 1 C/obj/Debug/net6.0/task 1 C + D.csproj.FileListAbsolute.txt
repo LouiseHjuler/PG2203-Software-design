@@ -1,0 +1,14 @@
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.AssemblyInfoInputs.cache
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.AssemblyInfo.cs
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.csproj.CoreCompileInputs.cache
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\bin\Debug\net6.0\task 1 C + D.exe
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\bin\Debug\net6.0\task 1 C + D.deps.json
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\bin\Debug\net6.0\task 1 C + D.runtimeconfig.json
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\bin\Debug\net6.0\task 1 C + D.dll
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\bin\Debug\net6.0\task 1 C + D.pdb
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.dll
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\refint\task 1 C + D.dll
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.pdb
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\task 1 C + D.genruntimeconfig.cache
+C:\Users\Chika\Desktop\HK\3.semester\PG2203-Software-design\ConsoleApp1\task 1 C\obj\Debug\net6.0\ref\task 1 C + D.dll
