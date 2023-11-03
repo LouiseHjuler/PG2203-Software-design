@@ -4,27 +4,26 @@ using UserDatabase.DataAccess.SqLite;
 using UserDatabase.Entities;
 
 namespace UserDatabase {
-	internal class Program {
+	public class Program {
 		static void Main() {
 		}
-		static int AddUser(string username, string city) {
-			User user = new(); {
-				user.Name = $"{username}";
-				user.City = $"{city}" ;
-				user.Admin = 0;
-			}
+		public static int AddUser(string username, string city, int admin) {
+			if (admin == 0 || admin == 1) {
+				User user = new();{
+					user.Name = $"{username}";
+					user.City = $"{city}"; //change to read from locationDb ref via PK ID. add to DBcontext n User class
+					user.Admin = admin;
+				}
+				using UserDbContext db = new();
+				db.User.Add(user);
+				db.SaveChanges();
 
-			using UserDbContext db = new();
-			db.User.Add(user);
-			db.SaveChanges();
-
-			return user.Id;
-		
+				return user.Id;
+			}throw new Exception("Admin value not allowed");
 		}
-		static void AddTrip(int tripId , int userId , int departlocation , int arrivalLocation) {
+		static void AddTrip(int userId , int departlocation , int arrivalLocation) {
 			using UserDbContext db = new();
 			Trip trip = new() {
-				Id = tripId ,
 				UserId = userId ,
 				DepartureId = departlocation ,
 				ArrivalId = arrivalLocation ,

@@ -1,3 +1,6 @@
+
+using UserDatabase.DataAccess.SqLite;
+
 namespace UserDbTest {
 	public class Tests {
 		[SetUp]
@@ -5,8 +8,14 @@ namespace UserDbTest {
 		}
 
 		[Test]
-		public void Test1() {
-			Assert.Pass();
+		public void AddTestUserToDbReturnNameOfUser() {
+			int userId = UserDatabase.Program.AddUser("test", "Oslo",0);
+			Assert.AreEqual(userId , 1);
+		} // test DB can be found \\UserDatabase\UserDbTest\bin\Debug\net6.0\Resources
+
+		[Test]
+		public void AddUserOutsideAdminSpecsFails() {
+			Assert.Throws<Exception>(() => UserDatabase.Program.AddUser("test" , "Oslo" , 3)); //throws<exception> thinks it's recieving an int. lambda fix
 		}
 	}
 }
