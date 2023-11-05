@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace UserDatabase.Migrations
+namespace TravelDatabase.Migrations
 {
     /// <inheritdoc />
-    public partial class initUserDb : Migration
+    public partial class TravelDatabaseInit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

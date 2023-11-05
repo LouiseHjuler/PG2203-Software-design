@@ -3,15 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using UserDatabase.DataAccess.SqLite;
+using TravelDatabase.DataAccess.SqLite;
 
 #nullable disable
 
-namespace UserDatabase.Migrations
+namespace TravelDatabase.Migrations
 {
-    [DbContext(typeof(UserDbContext))]
-    [Migration("20231102205433_initUserDb")]
-    partial class initUserDb
+    [DbContext(typeof(TravelDbContext))]
+    [Migration("20231105175918_TravelDatabaseInit")]
+    partial class TravelDatabaseInit
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,7 +19,7 @@ namespace UserDatabase.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
 
-            modelBuilder.Entity("UserDatabase.Entities.Trip", b =>
+            modelBuilder.Entity("TravelDatabase.Entities.Trip", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace UserDatabase.Migrations
                     b.ToTable("Trip");
                 });
 
-            modelBuilder.Entity("UserDatabase.Entities.User", b =>
+            modelBuilder.Entity("TravelDatabase.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,9 +61,9 @@ namespace UserDatabase.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("UserDatabase.Entities.Trip", b =>
+            modelBuilder.Entity("TravelDatabase.Entities.Trip", b =>
                 {
-                    b.HasOne("UserDatabase.Entities.User", "User")
+                    b.HasOne("TravelDatabase.Entities.User", "User")
                         .WithMany("Trip")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -72,7 +72,7 @@ namespace UserDatabase.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("UserDatabase.Entities.User", b =>
+            modelBuilder.Entity("TravelDatabase.Entities.User", b =>
                 {
                     b.Navigation("Trip");
                 });
